@@ -1,0 +1,30 @@
+﻿{
+  "name": "in-and-out-translation-platform",
+  "version": "1.0.0",
+  "description": "Full-stack translation services management platform",
+  "private": true,
+  "workspaces": [
+    "translation_frontend",
+    "translation_backend",
+    "translation_dashboard"
+  ],
+  "scripts": {
+    "dev:frontend": "cd translation_frontend && npm run dev",
+    "build:frontend": "cd translation_frontend && npm run build",
+    "preview:frontend": "cd translation_frontend && npm run preview",
+    "dev:backend": "cd translation_backend && npm run dev",
+    "dev:dashboard": "cd translation_dashboard && npm run dev",
+    "install:all": "npm install && cd translation_frontend && npm install",
+    "build:all": "npm run build:frontend",
+    "clean": "rm -rf */node_modules */dist"
+  },
+  "keywords": [
+    "translation",
+    "language-services",
+    "react",
+    "typescript",
+    "full-stack"
+  ],
+  "author": "IN & OUT Translation Services",
+  "license": "PROPRIETARY"
+}
